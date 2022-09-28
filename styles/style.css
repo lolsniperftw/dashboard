@@ -5,6 +5,16 @@ body {
     height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -18,11 +28,13 @@ li {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.5fr 4fr;
 }
 
 
 .sidebar {
     height: 100%;
+    /* max-width: ; */
     background-color: blue;
     display: flex;
     flex-direction: column;
@@ -38,7 +50,7 @@ li {
 }
 
 .logo-bar > img {
-    width: auto;
+     width: auto;
 }
 
 .navigation-bar {
@@ -49,6 +61,27 @@ li {
 .header,
 .main {
     padding: 1.5em;
+}
+.header {
+    display: grid;
+    /* grid-te; */
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.search {
+    display: flex;
+}
+input {
+    flex-grow: 1;
+}
+.status-area {
+    display: flex;
+    gap: 0.5rem;
 }
 .main {
     display: grid;
